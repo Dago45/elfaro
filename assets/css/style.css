@@ -1,0 +1,633 @@
+/* En este archivo. css, daremos el estilo a nuestra web.*/
+html{
+    font-size: 10px;
+    font-family: Roboto;
+    background-color: #f5f5f5;
+}
+#fecha-hora {
+    font-size: 24px;
+    font-family: Roboto;
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+.container-header {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+#btn-menu {
+    background-color: black; 
+    width: 100px; 
+    height: 40px; 
+    font-size: 24px;
+}
+
+#input-search{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#btn-search {
+    font-weight: bold;
+    font-size:24px; 
+    width: 100px; 
+    height: 40px;
+}
+
+
+header{
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.carusel{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #f5f5f5;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+.vinculo {
+    font-size: 16px;
+}
+
+/* Con hover, podemos modificar cuando el cursor se posiciona sobre la clase siguiente*/
+.vinculo:hover {
+    font-weight: bold;
+    text-decoration: none; /* esta accion nos permite quitar el subrrayado*/
+    
+}
+
+
+.title{
+    font-size: 36px;
+    text-decoration: underline;
+}
+ 
+
+#logo-el-faro{
+    width: 600px;
+    height: 200px;
+}
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    margin-left: 3%;
+}
+main{
+    box-sizing: border-box;
+}
+/* a continuacion se encuentra la creacion del flex, el cual nos permite visualizar las noticias como bloques */
+.bloque{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: space-between;
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+    flex-direction: row;
+    gap: 16px;
+    
+}
+/* Aquí se añadio estilo al bloque creado*/
+.bloque .noticia1 {
+    width: 31%;
+    height: 350px;
+    margin: 5px;
+    background-color: #ffffff;
+    border-radius: 8px; /* esto nos permite redondear el borde*/
+    border: 2px solid grey;
+   
+}
+
+.primicia {
+    width: 80% !important ;
+    height: 450px !important ;
+    margin-left: 5% !important ;    
+}
+
+.noticia1:hover{
+    background-color: black;
+    color: #ffffff;
+}
+.foto{
+    width: 100%;
+    height: 60%;
+}
+
+.video{
+    width: 100%;
+    height: 60%;
+    
+}
+.audio{
+    margin: 6%;
+    width: 90%;
+    height: 50px;
+}
+
+footer{
+    text-align: start;
+    justify-content: space-between;
+    background-color:#c9d2d0;
+    color:#31231e;
+    height: 300px;
+}
+/* Con esto le asignamos un orden a los elementos que se encuentan dentro del footer*/
+.footerStyle {	
+    display: flex;
+    grid-column: 1;
+    grid-gap: 15px 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+}
+.imagenFooter{
+    grid-column: span 2;
+}
+.listasFooter{
+    flex-flow: span 2;
+}
+li{
+    list-style: none;
+}
+.linkFooter {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 16px;
+
+   
+    margin-top: 200px;
+
+}
+
+.links {
+    display: flex;
+    width: 600px;
+}
+.menu-footer{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+.faroSmall {
+    width: 80%;
+    height: 100px;
+}
+
+.vinculoPie {
+    width: 100%;
+}
+
+.vinculoPie:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+ .logo-footer{
+    width: 500px; 
+    height: 200px; 
+    margin-top: 20px; 
+}
+
+.anuncios-txt{
+    margin-left: 40%; 
+    margin-bottom: 5%;
+}
+
+.anuncios-txt h3 {
+    font-size: 24px;
+}
+
+/* los media query nos permiten crear cortes de pantalla, para asi poder dejar nuestra web responsiva. Se crearon 3 cortes; celular, tablet y laptop*/
+@media screen and (max-width: 600px){
+    #fecha-hora {
+        font-family: Roboto;
+        background-color: #f5f5f5;
+        font-weight: bold;
+        font-size: 16px;
+        width: 60%;
+    }
+    form {
+        font-size: 16px;
+        font-family: Roboto;
+        background-color: #f5f5f5;
+        font-weight: bold;
+    }
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+    #enviar {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2px;
+    }
+
+    .anuncios-txt{
+        margin-left: 28%; 
+        margin-bottom: 5%;
+    }
+
+    .anuncios-txt h3 {
+        font-size: 12px;
+    }
+    .container-header {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    
+    #btn-menu {
+        background-color: black; 
+        width: 25%; 
+        height: 16%; 
+        font-size: 12px;
+    }
+    #input-search{
+        font-weight: bold;
+        font-size: 12px;
+        width: 50%;
+    }
+    
+    #btn-search {
+        font-weight: bold;
+        font-size:12px; 
+        width: 25%; 
+        height: 16%;
+    }
+    .bloque {
+        flex-direction: column;
+    }
+    .offcanvas{
+        width: 20px;
+    }
+    .bloque .noticia1 {
+        width: 100%;
+        height: 400px;
+        border-radius: none;
+        border: none;
+        align-items: flex-start;
+        background-color: rgb(255, 255, 255);
+    }
+    .primicia {
+        width: 100%;
+        height: 250px;
+        border: 4px solid blue !important;
+        background-color: grey !important;         
+    }
+
+    .primicia h2{
+        font-weight: bold;
+    }
+
+    .primicia h3{
+        font-weight: bold;
+    }
+    .noticia1:hover{
+        background-color: black;
+        color: #ffffff;
+    }
+    #logo-el-faro{
+        width: 40%;
+        height: 35%;
+    }
+    .imgCarusel{
+        width: 60%;
+        height: 20%;
+    }
+    .video{
+        width: 100%;
+        height: 50%;
+    }
+    .audio {
+        margin: 0.1%;
+        width: 90%;
+        height: 60px;
+    }
+    .footerStyle {
+        flex-direction: column;
+    }
+    .listasFooter{
+        flex-direction: column;
+        background-color:#c9d2d0;
+    }
+    .links {
+        display: flex;
+        width: 20%;
+    }
+    .linkFooter {
+        text-decoration: none;
+        color: var(--color-black);
+        font-size: 10px;
+        margin: 2px;
+        padding: 2px;
+        margin-top: 100px;
+    }
+    .logo-footer{
+        width: 425px; 
+        height: 125px; 
+        margin-top: 10px; 
+    }
+
+    #subirNoticia {
+        width: 30%;
+        height: 16%;
+        border: 2px solid black;
+        background-color: rgb(26, 225, 73);
+        align-items: flex-end;
+        align-content: flex-end;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 8px;
+       
+    }
+}/*hasta aqui estamos listos*/
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    #fecha-hora {
+        font-family: Roboto;
+        background-color: #f5f5f5;
+        font-weight: bold;
+        font-size: 16px;
+        width: 80%;
+    }
+    form {
+        font-size: 16px;
+        font-family: Roboto;
+        background-color: #f5f5f5;
+        font-weight: bold;
+    }
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    }
+    #enviar {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2px;
+    }
+
+    .anuncios-txt{
+        margin-left: 34%; 
+        margin-bottom: 5%;
+    }
+
+    .anuncios-txt h3 {
+        font-size: 12px;
+    }
+    .container-header {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    
+    #btn-menu {
+        background-color: black; 
+        width: 25%; 
+        height: 16%; 
+        font-size: 12px;
+    }
+    #input-search{
+        font-weight: bold;
+        font-size: 12px;
+        width: 50%;
+    }
+    
+    #btn-search {
+        font-weight: bold;
+        font-size:12px; 
+        width: 25%; 
+        height: 16%;
+    }
+    .bloque {
+        flex-direction: column;
+    }
+    .bloque .noticia1 {
+        width: 80%;
+        height: 300px;
+        border-radius: none;
+        border: none;
+        align-items: flex-start;
+        background-color: rgb(255, 255, 255);
+    }
+    #logo-el-faro{
+        width: 60%;
+        height: 45%;
+    }
+    .offcanvas{
+        width: 100px;
+    }
+    .imgCarusel{
+        width: 40%;
+        height: 15%;
+    }
+    .noticia1:hover{
+        background-color: black;
+        color: #ffffff;
+    }
+    
+    .video{
+        width: 100%;
+        height: 70%;
+    }
+    .audio {
+        margin: 0.1%;
+        width: 90%;
+        height: 100px;
+    }
+    footer{
+        text-align: start;
+        justify-content: space-between;
+        background-color:#c9d2d0;
+        color:#31231e;
+        width: 80%;
+    }
+    .footerStyle {
+        flex-direction: row;
+        width: 60%;
+    }
+    .listasFooter{
+        flex-direction: column;
+        background-color:#c9d2d0;
+        width: 60%;
+    }
+    .links {
+        display: flex;
+        width: 20%;
+    }
+    .linkFooter {
+        text-decoration: none;
+        color: var(--color-black);
+        font-size: 10px;
+        margin: 2px;
+        padding: 2px;
+        margin-top: 100px;
+    }
+    .logo-footer{
+        width: 425px; 
+        height: 125px; 
+        margin-top: 10px; 
+    }
+
+    #subirNoticia {
+        width: 30%;
+        height: 16%;
+        border: 2px solid black;
+        background-color: rgb(26, 225, 73);
+        align-items: flex-end;
+        align-content: flex-end;
+        align-self: flex-end;
+        font-weight: bold;
+        font-size: 8px;
+       
+    }
+}/*hasta aqui estamos listos*/
+
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    .bloque {
+        flex-direction: row;
+    }
+    .offcanvas{
+        width: 100px;
+    }
+    .bloque .noticia1 {
+        width: 100%;
+        height: 350px;
+        border-radius: none;
+        border: none;
+        align-items: flex-start;
+        background-color: rgb(255, 255, 255);
+    }
+    .noticia1:hover{
+        background-color: black;
+        color: #ffffff;
+    }
+    #logo-el-faro{
+        width: 100%;
+        height: 40%;
+    }
+    
+    .video{
+        width: 100%;
+        height: 50%;
+    }
+    .audio {
+        margin: 6%;
+        width: 90%;
+        height: 70px;
+    }
+    .reloj{
+        position: absolute;
+    }
+}
+
+
+#contadorArt{
+    font-size: 12px;
+    font-family: Roboto;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    border: black;
+    border-width: 2px;
+    border-radius: 4%;
+    border-style: solid;
+    display: inline-block;
+    transition: 0.2s;
+    text-align: center;
+}
+
+#contadorArt:hover {
+    background-color: yellowgreen;
+    color: black;
+    box-shadow: 0 0 10px yellowgreen, 0 0 40px yellowgreen, 0 0 80px yellowgreen;
+}
+
+#subirNoticia {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 10px;
+    border: 2px solid black;
+    background-color: rgb(26, 225, 73);
+    align-items: flex-end;
+    align-content: flex-end;
+    align-self: flex-end;
+    font-weight: bold;
+    position: absolute;
+    font-size: 24px;
+   
+}
+
+/*boton buscar*/
+form {
+    font-size: 16px;
+    font-family: Roboto;
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+
+
+#formulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: rgb(217, 46, 46);
+}
+
+#txtForm {
+    text-align: center;
+}
+
+#enviar {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    background-color: chartreuse;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch
+}
+
