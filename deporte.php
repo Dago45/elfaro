@@ -30,7 +30,7 @@
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div style="display: flex; flex-direction: row; justify-content: space-between;">
                     <div>
-                        <a href="index.html">
+                        <a href="index.php">
                             <img style="width: 340px; height: 80px; margin: 15px;" id="logo-el-faro" src="assets/src/logo-el-faro.svg" alt="">
                         </a>
                     </div>
@@ -49,9 +49,9 @@
                           </h2>
                           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                             <ul style="justify-content: flex-start; list-style: none;">
-                                <li style="display: list-item; text-align: start;"><a style="font-size: 15px; text-decoration: none;color: var(--color-black);" href="index.html"> INICIO </a></li>
-                                <li style="display: list-item; text-align: start;"><a style="font-size: 15px; text-decoration: none;color: var(--color-black);" href="deporte.html"> DEPORTES </a></li>
-                                <li style="display: list-item; text-align: start;"><a style="font-size: 15px; text-decoration: none;color: var(--color-black);" href="negocios.html"> NEGOCIOS </a></li>                                
+                                <li style="display: list-item; text-align: start;"><a style="font-size: 15px; text-decoration: none;color: var(--color-black);" href="index.php"> INICIO </a></li>
+                                <li style="display: list-item; text-align: start;"><a style="font-size: 15px; text-decoration: none;color: var(--color-black);" href="deporte.php"> DEPORTES </a></li>
+                                <li style="display: list-item; text-align: start;"><a style="font-size: 15px; text-decoration: none;color: var(--color-black);" href="negocios.php"> NEGOCIOS </a></li>                                
                             </ul>
                           </div>
                         </div>
@@ -59,7 +59,7 @@
                     <hr>
                     <!-- En este item se abrira la ventana emergente para cargar las noticias dinámicas-->
                     <div style="display: flex;flex-direction: row; justify-content:start;margin-left: 8px;">
-                        <a style="font-size: 24px; text-decoration: none; color: var(--color-black);" href="comentario.html" target="_blank">Tus comentarios aquí</a>
+                        <a style="font-size: 24px; text-decoration: none; color: var(--color-black);" href="comentario.php" target="_blank">Tus comentarios aquí</a>
                     </div>
                     <hr>
                     <div>
@@ -80,7 +80,7 @@
             </div>
            
             <div>
-                <a href="index.html">          
+                <a href="index.php">          
                     <img id="logo-el-faro" src="assets/src/logo-el-faro.svg" alt="">
                 </a> 
             </div>
@@ -144,26 +144,26 @@
         <footer>
             <section class="footerStyle">
                 <div class="imagenFooter">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img style="width: 500px; height: 200px; margin-top: 20px;" id="logo-el-faro" src="assets/src/logo-el-faro.svg" alt="">
                     </a>
                 </div>
                 <div class="listasFooter">
                     <nav class="links">
                         <ul class="menu-footer">
-                            <li><a class="linkFooter" href="quienesSomos.html">Quénes somos</a></li>
+                            <li><a class="linkFooter" href="quienesSomos.php">Quénes somos</a></li>
                             <hr>
-                            <li><a class="linkFooter" href="tarifasElectorales.html">Tarifas electorales</a></li>
+                            <li><a class="linkFooter" href="tarifasElectorales.php">Tarifas electorales</a></li>
                             <hr>
-                            <li><a class="linkFooter" href="tarifasPublicidad.html">Tarifas publicidad</a></li>
+                            <li><a class="linkFooter" href="tarifasPublicidad.php">Tarifas publicidad</a></li>
 
                         </ul>
                         <ul class="menu-footer">
-                            <li><a class="linkFooter" href="terminosCondiciones.html">Términos y condiciones</a></li>
+                            <li><a class="linkFooter" href="terminosCondiciones.php">Términos y condiciones</a></li>
                             <hr>
-                            <li><a class="linkFooter" href="politicasPrivacidad.html">Políticas de privacidad</a></li>
+                            <li><a class="linkFooter" href="politicasPrivacidad.php">Políticas de privacidad</a></li>
                             <hr>
-                            <li><a class="linkFooter" href="preguntasFrecuentes.html">Preguntas frecuentes</a></li>i>
+                            <li><a class="linkFooter" href="preguntasFrecuentes.php">Preguntas frecuentes</a></li>i>
                         </ul>
                     </nav>
                 </div>

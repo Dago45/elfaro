@@ -19,7 +19,7 @@ let noticias = [];
 // funcion para abrir una ventana emergente para añadir nueva noticia
 function abrirVentana() {
   let ventanaEmergente = window.open(
-    "subirArticulo.html",
+    "subirArticulo.php",
     "MiVentanaEmergente",
     "width=420,height=800"
   );

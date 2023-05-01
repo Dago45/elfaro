@@ -20,7 +20,7 @@
             <!-- Aquí comienza el encabezado de la pagina-->
             <header>
                 <div>            
-                    <a href="index.html">          
+                    <a href="index.php">          
                         <img id="logo-el-faro" src="assets/src/logo-el-faro.svg" alt="">
                     </a> 
                 </div>                          
@@ -52,26 +52,26 @@
     <footer>
         <section class="footerStyle">
             <div class="imagenFooter">
-                <a href="index.html">
+                <a href="index.php">
                     <img style="width: 500px; height: 200px; margin-top: 20px;" id="logo-el-faro" src="assets/src/logo-el-faro.svg" alt="">
                 </a>
             </div>
             <div class="listasFooter">
                 <nav style="display: flex;width: 1000px;">
                     <ul class="menu-footer">
-                        <li><a class="linkFooter" href="quienesSomos.html">Quénes somos</a></li>
+                        <li><a class="linkFooter" href="quienesSomos.php">Quénes somos</a></li>
                         <hr>
-                        <li><a class="linkFooter" href="tarifasElectorales.html">Tarifas electorales</a></li>
+                        <li><a class="linkFooter" href="tarifasElectorales.php">Tarifas electorales</a></li>
                         <hr>
-                        <li><a class="linkFooter" href="tarifasPublicidad.html">Tarifas publicidad</a></li>
+                        <li><a class="linkFooter" href="tarifasPublicidad.php">Tarifas publicidad</a></li>
 
                     </ul>
                     <ul class="menu-footer">
-                        <li><a class="linkFooter" href="terminosCondiciones.html">Términos y condiciones</a></li>
+                        <li><a class="linkFooter" href="terminosCondiciones.php">Términos y condiciones</a></li>
                         <hr>
-                        <li><a class="linkFooter" href="politicasPrivacidad.html">Políticas de privacidad</a></li>
+                        <li><a class="linkFooter" href="politicasPrivacidad.php">Políticas de privacidad</a></li>
                         <hr>
-                        <li><a class="linkFooter" href="preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                        <li><a class="linkFooter" href="preguntasFrecuentes.php">Preguntas frecuentes</a></li>
                     </ul>
                 </nav>
             </div>

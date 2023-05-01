@@ -8,10 +8,14 @@ const mensaje = document.getElementById("mensaje");
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
-  if (nombre.value == "" || mensaje.value == "" || correo.value == "") {
+  if (nombre.value === "" || mensaje.value === "" || correo.value === "") {
     Swal.fire("Por favor, complete todos los campos");
   } else {
     Swal.fire(`Gracias por contactarnos :D, ${nombre.value}! Su mensaje ha sido enviado :).`);
-    form.reset();
+    form.cerrarVista();
   }
 });
+
+function cerrarVista() {
+  window.opener.location.close();
+}
