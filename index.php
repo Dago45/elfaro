@@ -32,7 +32,7 @@
             </div>
             <!--Boton para registrarse-->
                 <div >
-                    <a id="subirNoticia" onclick="abrirRegistro()" class="dropdown-item" href="#">Registrese</a>
+                    <a id="registrarse" onclick="abrirRegistro()" class="dropdown-item" href="#">Registrese</a>
                 </div> 
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div style="display: flex; flex-direction: row; justify-content: space-between;">
