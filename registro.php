@@ -22,14 +22,15 @@
         </header>
          <!-- formulario para subir nuevo articulo-->
         <section class="form-register">
-            <form>
+            <form method="POST" action="controllers/registroformDB.php">
                 <h4>Ingresa los datos solicitados para registrarse</h4>
                 <input class="control" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                <input class="control" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
                 <input class="control" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
                 <input class="control" type="password" name="password" id="password" placeholder="Ingrese su password">
+                <p> Revise los datos ingresados antes de presionar el botón Guardar</p>
+                <button type="submit" class="boton" name="registro">Registrarse</button>
             </form>
-            <p> Revise los datos ingresados antes de presionar el botón Guardar</p>
-            <input type="submit" value="Guardar Registro" class="boton" onclick="guardarRegistro()" >
         </section>
     </body>
     <script src="assets/js/guardarRegistro.js"></script>

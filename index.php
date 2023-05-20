@@ -64,9 +64,16 @@
                         </div>
                     </div>
                     <hr>
-                    <!-- En este item se abrira la ventana emergente para cargar las noticias dinámicas-->
                     <div style="display: flex;flex-direction: row; justify-content:start;margin-left: 8px;">
                         <a style="font-size: 24px; text-decoration: none; color: var(--color-black);" onunload="abrirComentario()" href="comentario.php" target="_blank">Tus comentarios aquí</a>
+                    </div>
+                    <hr>
+                    <div style="display: flex;flex-direction: row; justify-content:start;margin-left: 8px;">
+                    <a style="font-size: 24px; text-decoration: none; color: var(--color-black);" onclick="abrirComentario()" class="dropdown-item" href="viewuser.php" target="_blank" >Administrar usuarios(SOLO ADMIN)</a>
+                    </div>
+                    <hr>
+                    <div style="display: flex;flex-direction: row; justify-content:start;margin-left: 8px;">
+                        <a style="font-size: 24px; text-decoration: none; color: var(--color-black);" onclick="abrirVentana()" href="#" target="_blank">Ingresar artículos(SOLO ADMIN)</a>
                     </div>
                     <hr>
                     <div>
@@ -79,10 +86,6 @@
                         </div>
                     </div>
                     <hr>
-                    <!-- En este item se abrira la ventana emergente para cargar las noticias dinámicas-->
-                    <div >
-                        <a id="subirNoticia" onclick="abrirVentana()" class="dropdown-item" href="#">Ingresar articulos(solo ADMIN)   </a>
-                    </div> 
                 </div>
             </div>
            

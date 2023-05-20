@@ -1,14 +1,14 @@
 <?php
 
 class Categoria() {
-    private string $tipo;
+    private string $nombrecategoria;
 
     function __construct() {
 
     }
 
-    function --__construct($tipo) {
-        $this->tipo = $tipo;
+    function --__construct($nombrecategoria) {
+        $this->nombrecategoria = $nombrecategoria;
     }
     
     function listar() {

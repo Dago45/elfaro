@@ -1,17 +1,15 @@
 <?php
 
 class Comentario() {
-    private int $idcomentario;
-    private var $correo;
+    private int $idcomentario;;
     private string $mensaje;
 
     function __construct() {
 
     }
 
-    function --__construct($idcomentario, $correo, $mensaje) {
-        $this->idcomentario = $idcomentario;
-        $this->correo = $correo;
+    function --__construct($idcomentario, $mensaje) {
+        $this->idcomentario = $idcomentario;o;
         $this->mensaje = $mensaje;
     }
     

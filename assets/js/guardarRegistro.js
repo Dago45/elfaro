@@ -1,13 +1,14 @@
-
 function abrirRegistro() {
-    let ventanaRegistro = window.open(
-      "registro.php",
-      "MiVentanaEmergente",
-      "width=420,height=800"
-    );
-  }
+  let ventanaRegistro = window.open(
+    "registro.php",
+    "MiVentanaEmergente",
+    "width=420,height=800"
+  );
+}
 
-  const form = document.querySelector("form");
+
+
+const form = document.querySelector("form");
 const nombre = document.getElementById("nombre");
 const correo = document.getElementById("correo");
 const mensaje = document.getElementById("mensaje");

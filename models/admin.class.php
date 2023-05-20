@@ -2,18 +2,20 @@
 
 class Admin() {
     private int $idadmin;
-    private string $tipo;
     private string $nombre;
+    private string $apellido;
+    private var $email;
     private var $password;
 
     function __construct() {
 
     }
 
-    function --__construct($idusuario, $tipo, $nombre, $password) {
+    function --__construct($idusuario, $nombre, $apellido, $email, $password) {
         $this->idusuario = $idusuario;
-        $this->tipo = $tipo;
         $this->nombre = $nombre;
+        $this->apellido = $apellido;
+        $this->email = $email;
         $this->password = $password;
     }
     
