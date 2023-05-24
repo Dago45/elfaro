@@ -6,7 +6,7 @@ $user = new Usuario('$nombre', '$apellido', '$email', '$password');
 $resultado = $user->obtener();
 
 if ($resultado->rowCount() >= 1) {
-    echo '<table class="table" style="width: 100%; border-collapse: collapse; border: 1px solid #ccc;">';
+    echo '<table class="table table-dark table-striped" style="width: 100%; border-collapse: collapse; border: 1px solid #ccc;">';
     echo '<thead>';
     echo '<tr>';
     echo '<th scope="col" style="padding: 8px; border-bottom: 1px solid #ccc;">Nombre</th>';
@@ -26,7 +26,7 @@ if ($resultado->rowCount() >= 1) {
 
     echo '</tbody>';
     echo '</table>';
-    echo '<strong>Datos de usuarios mostrados.</strong><br>';
+    echo '<strong>Tienes '.$resultado->rowCount().' usuarios registrados.</strong><br>';
 } else {
     echo 'Sin resultados';
 }

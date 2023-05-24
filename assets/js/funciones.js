@@ -25,6 +25,14 @@ function abrirVentana() {
   );
 }
 
+function abrirLogin() {
+  let ventanaNueva = window.open(
+    "login.php",
+    "MiVentanaEmergente",
+    "width=420,height=800"
+  );
+}
+
 function listarNoticias(categoria) {
   let div_noticias = document.getElementById("noticias");
   

@@ -16,24 +16,96 @@
     </head>
     
     <body>
-        
-        
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark p-4 fs-2">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Left Element -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="nav-link text-white fs-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            <span class="navbar-toggler-icon d-none d-sm-block"></span>
+                            <span class="d-block d-sm-none">MENÚ</span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-2" style="text-decoration: none;color: white;" href="index.php"> INICIO </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-2" style="text-decoration: none;color: white;" href="deporte.php"> DEPORTES </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-2" style="text-decoration: none;color: white;" href="negocios.php"> NEGOCIOS </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End Left Element -->
+            <!-- Center Element -->
+            <div class="collapse navbar-collapse d-none d-sm-block">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto ">
+                    <div class="nav-item" id="fecha-hora"></div>
+                </ul>
+            </div>
+            <!-- End Center Element -->
+            <!-- Right Element -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 form-control-lg fs-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success btn-lg fs-2" type="submit">Buscar</button>
+                    </form>
+                    <button id="registrarse" class="btn btn-outline-warning btn-lg fs-2 ms-3 d-none d-sm-block" onclick="abrirRegistro()" type="button">Regístrese</button>
+                    <button id="registrarse" class="btn btn-warning btn-lg fs-2 ms-3 d-none d-sm-block" onclick="abrirLogin()" type="button">Iniciar Sesión</button>
+                </ul>
+            </div>
+            <!-- End Right Element -->
+        </div>
+    </nav>
         <!-- Aquí comienza el encabezado de la pagina-->
         <header>
             <div class="container-header">
-                <button id="btn-menu" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-                    MENÚ
-                </button>
-                <div id="fecha-hora"></div>
-                <form class="d-flex" role="search">
-                    <input  id="input-search" class="form-control me-2" type="search" placeholder="Ingrese su busqueda" aria-label="Search">
-                    <button id="btn-search"  class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-            </div>
-            <!--Boton para registrarse-->
-                <div >
-                    <a id="registrarse" onclick="abrirRegistro()" class="dropdown-item" href="#">Registrese</a>
+                <div>
+                    <a href="index.php">          
+                        <img id="logo-el-faro" src="assets/src/logo-el-faro.svg" alt="">
+                    </a> 
+                </div>
+                <div class="carusel">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div  class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <a href="https://tienda.paula.cl/?utm_source=digital&amp;utm_medium=marketing&amp;utm_campaign=mama" target="_blank">
+                                <img class="imgCarusel"  src="https://picsum.photos/800/100?1" class="d-block w-10" alt="...">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://tienda.paula.cl/?utm_source=digital&amp;utm_medium=marketing&amp;utm_campaign=mama" target="_blank">
+                                <img class="imgCarusel"  src="https://picsum.photos/800/100?1" class="d-block w-10" alt="...">
+                            </a>                    </div>
+                        <div class="carousel-item">
+                            <a href="https://tienda.paula.cl/?utm_source=digital&amp;utm_medium=marketing&amp;utm_campaign=mama" target="_blank">
+                                <img class="imgCarusel"  src="https://picsum.photos/800/100?1" class="d-block w-10" alt="...">
+                            </a>                    </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>  
+                    <div class="anuncios-txt">
+                        <h3 style="border: 1px solid black;">
+                            Avisos y Anuncios
+                        </h3>
+                    </div>
                 </div> 
+            </div>
+            
+            <!--Menú lateral-->
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div style="display: flex; flex-direction: row; justify-content: space-between;">
                     <div>
@@ -64,9 +136,10 @@
                         </div>
                     </div>
                     <hr>
+                    <!-- En este item se abrira la ventana emergente para cargar las noticias dinámicas-->
                     <div style="display: flex;flex-direction: row; justify-content:start;margin-left: 8px;">
                         <a style="font-size: 24px; text-decoration: none; color: var(--color-black);" onunload="abrirComentario()" href="comentario.php" target="_blank">Tus comentarios aquí</a>
-                    </div>
+                        </div>
                     <hr>
                     <div style="display: flex;flex-direction: row; justify-content:start;margin-left: 8px;">
                     <a style="font-size: 24px; text-decoration: none; color: var(--color-black);" onclick="abrirComentario()" class="dropdown-item" href="viewuser.php" target="_blank" >Administrar usuarios(SOLO ADMIN)</a>
@@ -87,51 +160,16 @@
                     </div>
                     <hr>
                 </div>
-            </div>
-           
-            <div>
-                <a href="index.php">          
-                    <img id="logo-el-faro" src="assets/src/logo-el-faro.svg" alt="">
-                </a> 
-            </div>
-            <div class="carusel">
-                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                    <div  class="carousel-inner ">
-                    <div class="carousel-item active">
-                        <a href="https://tienda.paula.cl/?utm_source=digital&amp;utm_medium=marketing&amp;utm_campaign=mama" target="_blank">
-                            <img class="imgCarusel"  src="https://picsum.photos/800/100?1" class="d-block w-10" alt="...">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://tienda.paula.cl/?utm_source=digital&amp;utm_medium=marketing&amp;utm_campaign=mama" target="_blank">
-                            <img class="imgCarusel"  src="https://picsum.photos/800/100?1" class="d-block w-10" alt="...">
-                        </a>                    </div>
-                    <div class="carousel-item">
-                        <a href="https://tienda.paula.cl/?utm_source=digital&amp;utm_medium=marketing&amp;utm_campaign=mama" target="_blank">
-                            <img class="imgCarusel"  src="https://picsum.photos/800/100?1" class="d-block w-10" alt="...">
-                        </a>                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                </div>  
-                <div class="anuncios-txt">
-                    <h3 style="border: 1px solid black;">
-                        Avisos y Anuncios
-                    </h3>
-                </div>
-            </div>              
+            </div>            
         </header> 
 
         <main>
             <!-- Comienzo del cuerpo de las noticias-->
-        
-            <!-- Se crea la clase bloque, para poder crear el bloque de noticias-->
+            <div class="d-flex flex-column aling-content-centern">
+                <button id="registrarse" class="btn btn-outline-warning btn-lg fs-2 ms-3 d-block d-sm-none mx-auto" onclick="abrirRegistro()" type="button">Regístrese</button>          
+                <button id="registrarse" class="btn btn-warning btn-lg fs-2 ms-3 d-block d-sm-none" onclick="abrirRegistro()" type="button">Iniciar Sesión</button>
+            </div>  
+           <!-- Se crea la clase bloque, para poder crear el bloque de noticias-->
             <div class="bloque">
                 <!--En este Div se insertaran las noticias de forma dinamica, mediante un formulario de ingreso de estas-->
                 <div class="bloque" id="noticias"></div>
@@ -217,4 +255,5 @@
     <!--Link para usar las propiedades de boostraps js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="assets/js/guardarRegistro.js"></script>
+    <script src="assets/js/login.js"></script>
     </html>

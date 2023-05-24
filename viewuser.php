@@ -26,10 +26,12 @@
                 </div>                          
             </header>
             <body>
-                <a href="controllers/listar.usuario.php"
-                style= "border: 2px black solid; margin-left:40%; text-decoration: none; 
-                        color: black; font-size: 24px; border-radius: 6px;  padding: 2px;"
-                >Ver usuarios registrados</a>
+                <div class="row text-center mx-auto">
+                    <div class="col">
+                        <a class="btn btn-warning" href="#" onclick="listarUsuario()">Ver usuarios registrados</a>
+                    </div>
+                </div>
+                <div class="container mt-3" id="response"></div>
             </body>
            
         </main>
@@ -75,4 +77,5 @@
     <script src="assets/js/comentario.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/listar.usuario.js"></script>
 </html>

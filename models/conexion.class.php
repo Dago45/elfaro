@@ -13,8 +13,6 @@ class Conexion {
 
         try{
             $this->conn = new PDO("mysql:host=$host;dbname=$dbname",$username, $password);
-            
-            echo "<strong>conexion establecida.</strong>"."<br>";
             return $this->conn;
         }
         catch(PDOException $e){
