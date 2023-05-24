@@ -176,14 +176,12 @@
                 <div class="noticia1">
                     <h2 >Policial | Trágico desenlace: Muere trabajador de minimarket que fue baleado en la cabeza en Santiago centro</h2>
                     <img class="foto" alt="" src="https://www.latercera.com/resizer/8RTGF-m6uQKFujLf_CEK6sN9rsg=/1023x682/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/2WDSKEYH6FGD5PJKKVCJW3SL34.jpg">         
-                    <h3>El violento atraco se registró la noche del pasado lunes. El dueño del local denunció que habían sido amenazados.</h3> 
                 </div>   
 
                 <div class="noticia1">
                     <h2> Internacional | Xi Jinping llega a Rusia y asegura que protegerán el Nuevo Orden Mundial</h2>
                     <!-- Probamos anclando un video de youtube con el siguiente link-->
                     <iframe class="video"src="https://www.youtube.com/embed/cPLREG-WJRk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <h3> Los mandatarios de ambos paises, se reunieron para realizar acuerdos</h3>
                 </div>     
 
                 <div class="noticia1">
@@ -194,7 +192,6 @@
                         <source src="assets/src/noticiamp3.mp3" type="audio/ogg">
                         Your browser does not support the audio element.
                     </audio>
-                    <h3>El responsable de velar por los derechos humanos destaca el sufrimiento de la población y afirma que el conflicto nos retrotrae al pasado cuando “se podía atacar el territorio de un país vecino y tomarlo, a voluntad, como propio”.</h3> 
                 </div>
 
                 

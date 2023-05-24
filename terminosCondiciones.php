@@ -16,17 +16,54 @@
     </head>
     
     <body>
-        
+        <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark p-4 fs-2">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Left Element -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <button class="nav-link text-white fs-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                <span class="navbar-toggler-icon d-none d-sm-block"></span>
+                                <span class="d-block d-sm-none">MENÚ</span>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2" style="text-decoration: none;color: white;" href="index.php"> INICIO </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2" style="text-decoration: none;color: white;" href="deporte.php"> DEPORTES </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-2" style="text-decoration: none;color: white;" href="negocios.php"> NEGOCIOS </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Left Element -->
+                <!-- Center Element -->
+                <div class="collapse navbar-collapse d-none d-sm-block">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto ">
+                        <div class="nav-item" id="fecha-hora"></div>
+                    </ul>
+                </div>
+                <!-- End Center Element -->
+                <!-- Right Element -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 form-control-lg fs-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success btn-lg fs-2" type="submit">Buscar</button>
+                        </form>
+                    </ul>
+                </div>
+                <!-- End Right Element -->
+            </div>
+        </nav>
         
         <!-- Aquí comienza el encabezado de la pagina-->
         <header>
-            <div style="display: flex; flex-direction: row; justify-content: space-between;margin: 10px;margin-top: 10px;">
-                <div style="font-size: 24px;" id="fecha-hora"></div>
-                <form class="d-flex" role="search">
-                    <input  style="font-weight: bold;font-size: 24px;" class="form-control me-2" type="search" placeholder="Ingrese su busqueda" aria-label="Search">
-                    <button style="font-weight: bold;font-size:24px; width: 100px; height: 40px;" class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-            </div>
             <div>            
                 <a href="index.php">          
                     <img id="logo-el-faro" src="assets/src/logo-el-faro.svg" alt="">
@@ -62,7 +99,7 @@
                     </h3>
                 </div>
             </div>              
-        </header> 
+        </header>  
 
         <main>
            <div style="font-family: roboto;margin: 4%;" class="container">
